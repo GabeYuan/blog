@@ -6,7 +6,7 @@
   "author": "Gabe",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev",
+    "dev": "vuepress dev --temp .temp",
     "build": "vuepress build"
   },
   "devDependencies": {

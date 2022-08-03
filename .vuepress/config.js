@@ -1,3 +1,4 @@
+const { v3Source: v3Sider } = require("./dir.sider");
 const notesSider = require("./notes.sider");
 
 module.exports = {
@@ -11,12 +12,15 @@ module.exports = {
       { text: "首页", link: "/" },
       { text: "随记", link: "/notes-non-daily/" },
       {
+        text: "源码学习",
+        items: [
+          { text: "vue3源码", link: "/vue3-source/" },
+        ],
+      },
+      {
         text: "经验总结",
         items: [
           { text: "bug集", link: "/bugs" },
-          { text: "前端工程化", link: "/engenier" },
-          // { text: "Node 实践", link: "/" },
-          // { text: "Web 性能优化", link: "/" },
         ],
       },
       {
@@ -32,6 +36,7 @@ module.exports = {
     ],
     // 侧边栏
     sidebar: {
+      "/vue3-source/": v3Sider,
       "/notes-non-daily/": notesSider,
       // "/": [
       //   {
